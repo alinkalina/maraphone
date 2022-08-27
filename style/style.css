@@ -12,7 +12,7 @@
   font-style: normal;
   font-display: swap;}
 
-html, body, header, footer, main, div, nav, h1, a, p, span, h2, img, section, h3, button, blockquote, q, form, input {padding: 0;
+html, body, header, footer, main, div, nav, h1, a, p, span, h2, img, section, h3, button, form, input {padding: 0;
   margin: 0;}
 
 html, body, h1, h2, h3 {font-family: "Montserrat";
@@ -23,7 +23,7 @@ html, body, h1, h2, h3 {font-family: "Montserrat";
 
 .statistic , .request, .work span {background-color: #8D7370;}
 
-.team {background-color: #E2C4BA;}
+.team, .work {background-color: #E2C4BA;}
 
 header, footer, .about, .portfolio, .team, .work, .reviews, .request {padding-right: 100px;
   padding-left: 100px;}
@@ -51,7 +51,7 @@ p, footer span {font-size: 18px;
 
 .bold {font-weight: 500;}
 
-.light-bg {background-color: #CC8B86;}
+.light-bg, .reviews button {background-color: #CC8B86;}
 
 /* шапка */
 
@@ -107,6 +107,60 @@ header a.light-bg {display: inline-block;
 
 .portfolio .photos {display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;}
+  justify-content: center;}
+
+.portfolio .photos img:nth-child(odd) {margin-right: 20px;}
 
 .portfolio .photos img {margin-bottom: 30px;}
+
+/* команда */
+
+.team {padding-top: 50px;}
+
+.team div {padding: 40px 82px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: space-between;}
+
+.team div section p {width: 320px;
+  margin-top: 10px;}
+
+/* процесс работы */
+
+.work {padding-bottom: 80px;}
+
+.work div {display: grid;
+  padding-top: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;}
+
+.work div span {font-size: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  padding: 20px 0;
+  text-align: center;
+  margin-right: 50px;
+  box-sizing: border-box;}
+
+.work div p {text-align: center;}
+
+/* отзывы */
+
+.reviews {padding: 65px 182px;}
+
+.reviews h2 {margin-bottom: 40px;}
+
+.reviews div {display: flex;
+  align-items: center;
+  justify-content: space-between;}
+
+.reviews div section.text, .reviews div section.photos {width: 407px;}
+
+.reviews div section.photos img:not(:last-of-type) {margin-bottom: 25px;}
+
+.reviews button {border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  border: 0;}

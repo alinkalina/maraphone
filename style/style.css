@@ -1,0 +1,112 @@
+/* общие */
+
+@font-face {font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;}
+
+@font-face {font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;}
+
+html, body, header, footer, main, div, nav, h1, a, p, span, h2, img, section, h3, button, blockquote, q, form, input {padding: 0;
+  margin: 0;}
+
+html, body, h1, h2, h3 {font-family: "Montserrat";
+  color: #533738;
+  font-weight: 400;}
+
+.about, .portfolio, .reviews, footer {background-color: #EFE6E4;}
+
+.statistic , .request, .work span {background-color: #8D7370;}
+
+.team {background-color: #E2C4BA;}
+
+header, footer, .about, .portfolio, .team, .work, .reviews, .request {padding-right: 100px;
+  padding-left: 100px;}
+
+.about h2, a.h3, .team h2, .work h2, .reviews h2, .statistic h3 div {text-align: center;}
+
+a {color: #533738;
+  text-decoration: none;}
+
+h1, .statistic h3 div {font-size: 50px;
+  line-height: 62px;}
+
+h2 {font-size: 40px;
+  line-height: 50px;}
+
+h2, .statistic h3 {text-transform: uppercase;}
+
+h3, .h3 {font-size: 30px;
+  line-height: 36px;}
+
+p, footer span {font-size: 18px;
+  line-height: 30px;}
+
+.light {color: #FFFFFF;}
+
+.bold {font-weight: 500;}
+
+.light-bg {background-color: #CC8B86;}
+
+/* шапка */
+
+header {background: url("../img/background.png") no-repeat;
+  background-size: 100% 100%;
+  padding-top: 36px;
+  padding-bottom: 230px;}
+
+header nav {font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 90px;}
+
+header nav a:first-child {margin-right: 80px;}
+
+header .logo {position: relative;
+  top: 5px;}
+
+header div {margin-left: 82px}
+
+header div h1 {width: 535px;
+  margin-bottom: 25px;}
+
+header div p {width: 440px;
+  margin-bottom: 20px;}
+
+header a.light-bg {display: inline-block;
+  padding: 25px 65px;}
+
+/* о нас */
+
+.about {padding-top: 65px;}
+
+.about > div:first-of-type {margin: 40px 82px 20px;
+  display: flex;
+  justify-content: space-between;}
+
+.about div:first-of-type p {width: 528px;}
+
+.about .statistic {margin: 0 -100px;
+  padding: 80px 182px 85px;
+  display: flex;
+  justify-content: space-between;}
+
+.about .statistic h3 div {font-weight: 400;
+  margin-bottom: 8px;}
+
+/* работы */
+
+.portfolio {padding: 65px 100px;}
+
+.portfolio .photos {display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;}
+
+.portfolio .photos img {margin-bottom: 30px;}

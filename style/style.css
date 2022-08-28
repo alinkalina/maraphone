@@ -74,7 +74,9 @@ header nav a:first-child {margin-right: 80px;}
 header .logo {position: relative;
   top: 5px;}
 
-header div {margin-left: 150px}
+header div {margin-left: auto;
+  margin-right: auto;
+  width: 1036px;}
 
 header div h1 {width: 535px;
   margin-bottom: 25px;}
@@ -125,15 +127,28 @@ header a.light-bg {display: inline-block;
   justify-content: center;
   padding: 40px 0;}
 
-.portfolio .photos img:nth-child(odd) {margin-right: 20px;}
+.portfolio .photos section:nth-child(odd) {margin-right: 20px;}
 
-.portfolio .photos img:not(:nth-child(3)):not(:nth-child(4)) {margin-bottom: 30px;}
+.portfolio .photos section:not(:nth-child(3)):not(:nth-child(4)) {margin-bottom: 30px;}
+
+.portfolio .photos section:first-of-type {position: relative;}
 
 .portfolio a {display: block;
   width: 1200px;
   margin: 0 auto;}
 
-.portfolio .mask {position: absolute;}
+.portfolio .mask {position: absolute;
+  padding-top: 85px;
+  width: 488px;
+  height: 366px;
+  background-color: rgba(100, 72, 69, 0.8)}
+
+.portfolio .mask h3 {width: 270px;
+  margin: 0 auto 20px;
+  text-align: center;}
+
+.portfolio .mask p {width: 418px;
+  margin: 0 auto;}
 
 /* команда */
 

@@ -21,33 +21,33 @@ html, body, h1, h2, h3 {font-family: "Montserrat";
 
 .about, .portfolio, .reviews, footer {background-color: #EFE6E4;}
 
-.statistic , .request, .work span {background-color: #8D7370;}
+.statistic, .request, .work span {background-color: #8D7370;}
 
 .team, .work {background-color: #E2C4BA;}
 
 header, footer, .about, .portfolio, .team, .work, .reviews, .request {padding-right: 100px;
   padding-left: 100px;}
 
-.about h2, a.h3, .team h2, .work h2, .reviews h2, .statistic h3 div {text-align: center;}
+.about h2, a.h3, .team h2, .work h2, .reviews h2, .statistic section h3 div {text-align: center;}
 
-a {color: #533738;
+a, input#submit {color: #533738;
   text-decoration: none;}
 
-h1, .statistic h3 div {font-size: 50px;
+h1, .statistic section h3 div {font-size: 50px;
   line-height: 62px;}
 
 h2 {font-size: 40px;
   line-height: 50px;}
 
-h2, .statistic h3 {text-transform: uppercase;}
+h2, .statistic section h3 {text-transform: uppercase;}
 
 h3, .h3 {font-size: 30px;
   line-height: 36px;}
 
-p, footer span {font-size: 18px;
+p, footer span, input {font-size: 18px;
   line-height: 30px;}
 
-.light {color: #FFFFFF;}
+.light, .request form input:not(#submit)::placeholder {color: #FFFFFF;}
 
 .bold {font-weight: 500;}
 
@@ -63,6 +63,8 @@ header {background: url("../img/background.png") no-repeat;
 header nav {font-size: 16px;
   line-height: 20px;
   display: flex;
+  width: 1200px;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 90px;}
@@ -72,7 +74,7 @@ header nav a:first-child {margin-right: 80px;}
 header .logo {position: relative;
   top: 5px;}
 
-header div {margin-left: 82px}
+header div {margin-left: 150px}
 
 header div h1 {width: 535px;
   margin-bottom: 25px;}
@@ -85,40 +87,62 @@ header a.light-bg {display: inline-block;
 
 /* о нас */
 
-.about {padding-top: 65px;}
+.about {padding-top: 65px;
+  padding-bottom: 20px;}
 
-.about > div:first-of-type {margin: 40px 82px 20px;
+.about > div:first-of-type {margin: 40px auto;
+  margin-bottom: 0;
   display: flex;
-  justify-content: space-between;}
+  justify-content: space-between;
+  width: 1036px;}
 
 .about div:first-of-type p {width: 528px;}
 
-.about .statistic {margin: 0 -100px;
-  padding: 80px 182px 85px;
-  display: flex;
-  justify-content: space-between;}
+/* статистика */
 
-.about .statistic h3 div {font-weight: 400;
+.statistic {padding: 80px 100px 85px;}
+
+.statistic section {display: flex;
+  justify-content: space-between;
+  width: 1036px;
+  margin: 0 auto;}
+
+.statistic section h3 div {font-weight: 400;
   margin-bottom: 8px;}
 
 /* работы */
 
 .portfolio {padding: 65px 100px;}
 
+.portfolio h2 {display: block;
+  width: 1200px;
+  margin: 0 auto;}
+
 .portfolio .photos {display: flex;
+  width: 1200px;
+  margin: 0 auto;
   flex-wrap: wrap;
-  justify-content: center;}
+  justify-content: center;
+  padding: 40px 0;}
 
 .portfolio .photos img:nth-child(odd) {margin-right: 20px;}
 
-.portfolio .photos img {margin-bottom: 30px;}
+.portfolio .photos img:not(:nth-child(3)):not(:nth-child(4)) {margin-bottom: 30px;}
+
+.portfolio a {display: block;
+  width: 1200px;
+  margin: 0 auto;}
+
+.portfolio .mask {position: absolute;}
 
 /* команда */
 
 .team {padding-top: 50px;}
 
-.team div {padding: 40px 82px;
+.team div {padding: 40px 0;
+  margin: 0 auto;
   padding-bottom: 35px;
+  width: 1036px;
   display: flex;
   justify-content: space-between;}
 
@@ -131,6 +155,8 @@ header a.light-bg {display: inline-block;
 
 .work div {display: grid;
   padding-top: 40px;
+  width: 1200px;
+  margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;}
 
@@ -142,6 +168,7 @@ header a.light-bg {display: inline-block;
   padding: 20px 0;
   text-align: center;
   margin-right: 50px;
+  margin-left: 108px;
   box-sizing: border-box;}
 
 .work div p {text-align: center;}
@@ -154,6 +181,8 @@ header a.light-bg {display: inline-block;
 
 .reviews div {display: flex;
   align-items: center;
+  width: 1036px;
+  margin: 0 auto;
   justify-content: space-between;}
 
 .reviews div section.text, .reviews div section.photos {width: 407px;}
@@ -164,3 +193,53 @@ header a.light-bg {display: inline-block;
   width: 72px;
   height: 72px;
   border: 0;}
+
+.reviews button:nth-child(1) {margin-right: 10px;}
+
+.reviews button:last-child {margin-left: 10px;}
+
+/* форма для заявки */
+
+.request {height: 624px;
+  padding: 0 !important;}
+
+.request div {display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: flex-end;}
+
+.request div section:first-of-type {width: 508px;
+  margin-right: 20px;}
+
+.request div section:first-of-type h2 {margin-top: 50px;
+  margin-bottom: 25px;}
+
+.request div section:first-of-type p {margin-bottom: 45px;}
+
+.request form input:not(#submit) {border: 0;
+  background: transparent;
+  outline: 0;
+  height: 35px;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 35px;}
+
+.request form input#name {width: 100%;}
+
+.request form input#tel {width: 84%;}
+
+.request form input#submit {border: 0;
+  padding: 25px 66px;
+  font-size: 20px;
+  line-height: 25px;}
+
+/* подвал */
+
+footer {padding: 37px 0;}
+
+footer div {width: 1200px;
+  margin: 0 auto;
+  display: flex;}
+
+footer div span:nth-child(1) {margin-right: 42px;}
+
+footer div span:nth-child(3) {margin-left: auto;}

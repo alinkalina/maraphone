@@ -15,7 +15,7 @@
 html, body, header, footer, main, div, nav, h1, a, p, span, h2, img, section, h3, button, form, input {padding: 0;
   margin: 0;}
 
-html, body, h1, h2, h3 {font-family: "Montserrat";
+html, body, h1, h2, h3, input#submit {font-family: "Montserrat";
   color: #533738;
   font-weight: 400;}
 
@@ -30,7 +30,9 @@ header, footer, .about, .portfolio, .team, .work, .reviews, .request {padding-ri
 
 .about h2, a.h3, .team h2, .work h2, .reviews h2, .statistic section h3 div {text-align: center;}
 
-a, input#submit {color: #533738;
+button, input#submit {cursor: pointer;}
+
+a {color: #533738;
   text-decoration: none;}
 
 h1, .statistic section h3 div {font-size: 50px;
@@ -258,3 +260,13 @@ footer div {width: 1200px;
 footer div span:nth-child(1) {margin-right: 42px;}
 
 footer div span:nth-child(3) {margin-left: auto;}
+
+/* динамические эффекты всей страницы */
+
+header nav a:hover {text-decoration: underline;}
+
+header div a:hover, .reviews div button:hover, .reviews div button:hover img, .request form input#submit:hover {opacity: 0.8;}
+
+.portfolio > a:hover {color: rgba(83, 55, 56, 0.8);}
+
+.request form input:not(#submit):hover::placeholder {color: rgba(255, 255, 255, 0.8);}
